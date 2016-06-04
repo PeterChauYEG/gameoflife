@@ -6,6 +6,7 @@ import Main from '../components/Main'
 function mapStateToProps(state) {
   return {
     board: state.board,
+    controls: state.controls,
     generations: state.generations,
   }
 }
