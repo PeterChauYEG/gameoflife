@@ -4,9 +4,10 @@ export function clearBoard() {
   }
 }
 
-export function startGenerationCounter(generations, isRunning) {
+export function startGenerationCounter(gameSpeed, generations, isRunning) {
   return {
     type: 'START_GENERATION_COUNTER',
+    gameSpeed,
     generations,
     isRunning,
   }
@@ -21,5 +22,19 @@ export function pauseGame() {
 export function startGame() {
   return {
     type: 'START_GAME',
+  }
+}
+
+export function increaseSpeed(gameSpeed) {
+  return {
+    type: 'INCREASE_SPEED',
+    gameSpeed,
+  }
+}
+
+export function decreaseSpeed(gameSpeed) {
+  return {
+    type: 'DECREASE_SPEED',
+    gameSpeed,
   }
 }

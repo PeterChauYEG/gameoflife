@@ -2,12 +2,29 @@ export default function controls(state = [], action) {
   switch (action.type) {
     case 'START_GAME':
       return {
-        isRunning: true
+        ...state,
+        isRunning: true,
       }
     case 'PAUSE_GAME':
       return {
-        isRunning: false
+        ...state,
+        isRunning: false,
       }
+    case 'CLEAR_BOARD':
+      return  {
+        gameSpeed: 1000,
+        isRunning: false,
+      }
+    case 'INCREASE_SPEED':
+      return {
+        ...state,
+        gameSpeed: action.gameSpeed / 2,
+      }
+    case 'DECREASE_SPEED':
+      return {
+        ...state,
+        gameSpeed: action.gameSpeed * 2,
+      }      
     default:
       return state
   }
