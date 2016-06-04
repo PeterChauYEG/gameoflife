@@ -1,4 +1,4 @@
-$cell-color: #808080;
+$cell-color: #42afe3;
 $game-board-height: 500px;
 $game-board-width: 500px;
 
@@ -37,7 +37,6 @@ $game-board-width: 500px;
 .gameboard {
     height: $game-board-height;
     width: $game-board-width;
-    border: 1px solid #000;
     display: flex;
     flex-direction: column;
 }
