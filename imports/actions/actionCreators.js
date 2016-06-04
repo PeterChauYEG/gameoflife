@@ -1,6 +1,6 @@
-export function setBoardSize(size) {
+export function setGeneration(generation) {
     return {
-        type: 'SET_BOARD_SIZE',
-        size,
+        type: 'SET_GENERATION',
+        generation,
     }
 }

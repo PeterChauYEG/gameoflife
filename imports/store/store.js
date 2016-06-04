@@ -10,11 +10,13 @@ import rootReducer from '../reducers/index'
 import rootSaga from '../sagas/index'
 
 // import default data
-import boardSize from '../data/boardSize'
+import board from '../data/board'
+import generations from '../data/generations'
 
 // create an object for the default data
 const defaultState = {
-  boardSize,
+  board,
+  generations,
 }
 
 // create the saga middleware

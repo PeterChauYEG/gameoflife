@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
-import boardSize from './boardSize'
+import board from './board'
+import generations from './generations'
 
 const rootReducer = combineReducers({
-  boardSize,
+  board,
+  generations,
   routing: routerReducer,
 })
 

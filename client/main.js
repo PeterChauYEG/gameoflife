@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 
 // import componenet
 import App from '../imports/components/App'
+import PlayArea from '../imports/components/PlayArea'
 
 // import react-router deps
 import { Router, Route, IndexRoute } from 'react-router'
@@ -13,6 +14,7 @@ const router = (
   <Provider store={store} >
     <Router history={history}>
       <Route path="/" component={App}>
+        <IndexRoute component={PlayArea} />
       </Route>
     </Router>
   </Provider>

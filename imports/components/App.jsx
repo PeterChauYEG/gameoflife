@@ -5,7 +5,8 @@ import Main from '../components/Main'
 
 function mapStateToProps(state) {
   return {
-    boardSize: state.boardSize,
+    board: state.board,
+    generations: state.generations,
   }
 }
 
