@@ -12,7 +12,8 @@ export default function controls(state = [], action) {
       }
     case 'CLEAR_BOARD':
       return  {
-        gameSpeed: 1000,
+        ...state,
+        gameSpeed: 500,
         isRunning: false,
       }
     case 'INCREASE_SPEED':
@@ -24,7 +25,7 @@ export default function controls(state = [], action) {
       return {
         ...state,
         gameSpeed: action.gameSpeed * 2,
-      }      
+      }
     default:
       return state
   }

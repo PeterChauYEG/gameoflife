@@ -1,8 +1,8 @@
 $cell-color: #42afe3;
 $cell-alive: #847bb9;
 $cell-dead: #ed6c63;
-$game-board-height: 500px;
-$game-board-width: 500px;
+$game-board-height: 750px;
+$game-board-width: 750px;
 
 #root {
     height: 100%;
@@ -27,7 +27,7 @@ $game-board-width: 500px;
     justify-content: space-around;
     align-items: center;    
     flex-direction: column;
-    height: 80vh;
+    margin: 32px 0;
 }
 
 .controls {
@@ -41,6 +41,7 @@ $game-board-width: 500px;
     width: $game-board-width;
     display: flex;
     flex-direction: column;
+    margin: 32px 0;
 }
 
 .cell-row {

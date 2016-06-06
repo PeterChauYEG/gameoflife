@@ -47,3 +47,11 @@ export function setHealth(health, i) {
     i,
   }
 }
+
+export function setBoardSize(rows, columns) {
+  return {
+    type: 'SET_BOARD_SIZE',
+    rows,
+    columns,
+  }
+}

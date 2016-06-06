@@ -7,6 +7,7 @@ import Generations from './Generations'
 
 const PlayArea = React.createClass({
   render () {
+    this.props.startGenerationCounter(this.props.controls.gameSpeed, this.props.generations, this.props.controls.isRunning, this.props.board)
     return (
       <div className="play-area">
         <Generations {...this.props} />

@@ -9,52 +9,19 @@ function* incrementGeneration(action) {
     
     for (var cell in action.board) {
       // determine state of cell
-      const { health, row, column } = action.board[cell]
-
-      // determine neighbours of cell
-      const neighbours = action.board.filter((neighbour) => {
-        if (neighbour.row === row - 1) {
-          if (neighbour.column === column - 1) {
-            return true
-          }
-          if (neighbour.column === column) {
-            return true
-          }
-          if (neighbour.column === column + 1) {
-            return true
-          }
-        }
-        if (neighbour.row === row) {
-          if (neighbour.column === column - 1) {
-            return true
-          }
-          if (neighbour.column === column + 1) {
-            return true
-          }
-        }
-        if (neighbour.row === row + 1) {
-          if (neighbour.column === column - 1) {
-            return true
-          }
-          if (neighbour.column === column) {
-            return true
-          }
-          if (neighbour.column === column + 1) {
-            return true
-          }
-        }
-      })
+      const { health, row, column, neighbours } = action.board[cell]
       
       // determine health of neighbours
       let neighboursAlive = 0
-      let neighboursDead = 0
-      
-      neighbours.forEach((neighbour) => {
-        if (neighbour.health === 'alive') {
-          neighboursAlive++
-        } else if (neighbour.health === 'dead') {
-          neighboursDead++
-        }
+
+      neighbours.forEach((cellNeighbour) => {
+        action.board.forEach((neighbour) => {
+          if (cellNeighbour.row === neighbour.row && cellNeighbour.column === neighbour.column) {
+            if (neighbour.health === 'alive') {
+              neighboursAlive++
+            }            
+          }
+        })
       })
       
       // set new cell state

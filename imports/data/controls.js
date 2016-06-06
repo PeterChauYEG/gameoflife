@@ -1,6 +1,10 @@
 const controls = {
   isRunning: true,
-  gameSpeed: 1000.
+  gameSpeed: 500,
+  boardSize: {
+    rows: 4,
+    columns: 4,
+  }
 }
 
 export default controls
