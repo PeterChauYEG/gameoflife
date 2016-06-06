@@ -4,12 +4,13 @@ export function clearBoard() {
   }
 }
 
-export function startGenerationCounter(gameSpeed, generations, isRunning) {
+export function startGenerationCounter(gameSpeed, generations, isRunning, board) {
   return {
     type: 'START_GENERATION_COUNTER',
     gameSpeed,
     generations,
     isRunning,
+    board,
   }
 }
 
@@ -36,5 +37,20 @@ export function decreaseSpeed(gameSpeed) {
   return {
     type: 'DECREASE_SPEED',
     gameSpeed,
+  }
+}
+
+export function setHealth(health, i) {
+  return {
+    type: 'SET_CELL_HEALTH',
+    health,
+    i,
+  }
+}
+
+export function setBoard(board) {
+  return {
+    type: 'SET_BOARD',
+    board,
   }
 }

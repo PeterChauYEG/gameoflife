@@ -1,11 +1,13 @@
 $cell-color: #42afe3;
+$cell-alive: #847bb9;
+$cell-dead: #ed6c63;
 $game-board-height: 500px;
 $game-board-width: 500px;
 
 #root {
     height: 100%;
     width: 100%;
-    padding: 50px;
+    padding: 16px;
 }
 
 .main {
@@ -52,4 +54,12 @@ $game-board-width: 500px;
     min-width: 8px;
     background-color: $cell-color;
     flex: auto;
+}
+
+.alive {
+    background-color: $cell-alive;
+}
+
+.dead {
+    background-color: $cell-dead;
 }
