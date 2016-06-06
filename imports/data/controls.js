@@ -1,9 +1,9 @@
 const controls = {
   isRunning: true,
-  gameSpeed: 500,
+  gameSpeed: 300,
   boardSize: {
-    rows: 4,
-    columns: 4,
+    rows: 3,
+    columns: 3,
   }
 }
 
