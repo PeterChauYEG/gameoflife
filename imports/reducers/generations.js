@@ -2,7 +2,7 @@ export default function generations(state = [], action) {
   switch (action.type) {
     case 'CLEAR_BOARD':
       return 0
-    case 'SET_GENERATION':
+    case 'UPDATE_BOARD':
       return action.generations
     default:
       return state

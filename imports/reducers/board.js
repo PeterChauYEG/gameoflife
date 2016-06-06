@@ -11,7 +11,7 @@ export default function board(state = [], action) {
         { ...state[i], health: action.health },
         ...state.slice(i + 1)
       ]
-    case 'SET_BOARD':
+    case 'UPDATE_BOARD':
       return action.board
     default:
       return state

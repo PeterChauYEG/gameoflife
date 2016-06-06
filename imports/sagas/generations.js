@@ -78,8 +78,7 @@ function* incrementGeneration(action) {
       
     }
     
-    yield put({ type: 'SET_BOARD', board: newBoard })
-    yield put({ type: 'SET_GENERATION', generations: action.generations + 1 })
+    yield put({ type: 'UPDATE_BOARD', board: newBoard, generations: action.generations + 1 })
   }
   else {
     return

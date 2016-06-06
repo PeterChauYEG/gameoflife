@@ -47,10 +47,3 @@ export function setHealth(health, i) {
     i,
   }
 }
-
-export function setBoard(board) {
-  return {
-    type: 'SET_BOARD',
-    board,
-  }
-}
