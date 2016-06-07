@@ -1,5 +1,5 @@
 $cell-color: #42afe3;
-$cell-alive: #847bb9;
+$cell-alive: #97cd76;
 $cell-dead: #ed6c63;
 $game-board-height: 750px;
 $game-board-width: 750px;
@@ -7,7 +7,10 @@ $game-board-width: 750px;
 #root {
     height: 100%;
     width: 100%;
-    padding: 16px;
+}
+
+.hero.is-primary.is-bold.is-fullheight {
+    padding: 32px auto !important;
 }
 
 .main {
@@ -19,6 +22,7 @@ $game-board-width: 750px;
 }
 
 .title {
+    padding-top: 16px;
     text-align: center;
 }
 
@@ -27,7 +31,7 @@ $game-board-width: 750px;
     justify-content: space-around;
     align-items: center;    
     flex-direction: column;
-    margin: 32px 0;
+    padding: 16px 0;
 }
 
 .controls {
@@ -47,7 +51,7 @@ $game-board-width: 750px;
     width: $game-board-width;
     display: flex;
     flex-direction: column;
-    margin: 32px 0;
+    padding: 0 0 16px 0;
 }
 
 .cell-row {

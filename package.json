@@ -6,7 +6,8 @@
   "scripts": {
     "start": "meteor --port $IP:$PORT",
     "lint": "eslint .",
-    "reset": "meteor reset"
+    "reset": "meteor reset",
+    "ssh": "ssh webmaster@104.236.83.118"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "react": "15.1.0",
+    "react-addons-css-transition-group": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-redux": "^4.4.5",
     "react-router": "^2.4.1",
