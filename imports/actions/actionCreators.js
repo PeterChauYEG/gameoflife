@@ -1,6 +1,7 @@
-export function generateRandomBoard() {
+export function generateRandomBoard(boardSize) {
   return {
     type: 'GENERATE_RANDOM_BOARD',
+    boardSize,
   }
 }
 

@@ -1,9 +1,9 @@
-import gameBoard from '../data/board'
+import generateBoard from '../data/board'
 
 export default function board(state = [], action) {
   switch (action.type) {
     case 'GENERATE_RANDOM_BOARD':
-      return gameBoard
+      return generateBoard(action.boardSize.rows, action.boardSize.columns)
     case 'SET_CELL_HEALTH':
       const i = action.i
       return [

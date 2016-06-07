@@ -10,9 +10,11 @@ import rootReducer from '../reducers/index'
 import rootSaga from '../sagas/index'
 
 // import default data
-import board from '../data/board'
+import generateBoard from '../data/board'
 import controls from '../data/controls'
 import generations from '../data/generations'
+
+const board = generateBoard(20,20)
 
 // create an object for the default data
 const defaultState = {
