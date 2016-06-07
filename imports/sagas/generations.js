@@ -28,14 +28,12 @@ function* incrementGeneration(action) {
       let newHealth = null
       
       if (health === 'alive') {
-        if (neighboursAlive < 2) {
+        if (neighboursAlive < 2 || neighboursAlive > 3) {
           newHealth = 'dead'
-        } else if (neighboursAlive === 2 || neighboursAlive === 3) {
+        } else {
           newHealth = 'alive'
-        } else if (neighboursAlive > 3) {
-          newHealth = 'dead'
         }
-      } else if (health === 'dead') {
+      } else {
         if (neighboursAlive === 3) {
           newHealth = 'alive'
         }

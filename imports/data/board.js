@@ -41,7 +41,7 @@ const board = [
   {
     row: 0,
     column: 1,
-    health: null,
+    health: 'alive',
     neighbours: [
       {
         row: 2,
@@ -119,7 +119,7 @@ const board = [
   {
     row: 1,
     column: 0,
-    health: null,
+    health: 'alive',
     neighbours: [
       {
         row: 0,
@@ -236,7 +236,7 @@ const board = [
   {
     row: 2,
     column: 0,
-    health: null,
+    health: 'alive',
     neighbours: [
       {
         row: 1,
