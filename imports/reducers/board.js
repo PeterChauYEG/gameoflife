@@ -2,7 +2,7 @@ import gameBoard from '../data/board'
 
 export default function board(state = [], action) {
   switch (action.type) {
-    case 'CLEAR_BOARD':
+    case 'GENERATE_RANDOM_BOARD':
       return gameBoard
     case 'SET_CELL_HEALTH':
       const i = action.i

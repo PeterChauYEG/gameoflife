@@ -1,6 +1,6 @@
 let board = []
-const rows = 30
-const columns = 30
+const rows = 20
+const columns = 20
 const health = [null, 'alive', 'dead']
 
 // generate board

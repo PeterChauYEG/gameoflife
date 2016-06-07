@@ -1,6 +1,6 @@
 export default function generations(state = [], action) {
   switch (action.type) {
-    case 'CLEAR_BOARD':
+    case 'GENERATE_RANDOM_BOARD':
       return 0
     case 'UPDATE_BOARD':
       return action.generations

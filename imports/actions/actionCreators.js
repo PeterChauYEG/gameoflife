@@ -1,6 +1,6 @@
-export function clearBoard() {
+export function generateRandomBoard() {
   return {
-    type: 'CLEAR_BOARD',
+    type: 'GENERATE_RANDOM_BOARD',
   }
 }
 

@@ -10,10 +10,9 @@ export default function controls(state = [], action) {
         ...state,
         isRunning: false,
       }
-    case 'CLEAR_BOARD':
+    case 'GENERATE_RANDOM_BOARD':
       return  {
         ...state,
-        gameSpeed: 500,
         isRunning: false,
       }
     case 'INCREASE_SPEED':
@@ -25,6 +24,15 @@ export default function controls(state = [], action) {
       return {
         ...state,
         gameSpeed: action.gameSpeed * 2,
+      }
+    case 'SET_BOARD_SIZE':
+      return {
+        ...state,
+        isRunning: false,
+        boardSize: {
+          rows: action.rows,
+          columns: action.columns
+        }
       }
     default:
       return state

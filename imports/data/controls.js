@@ -2,8 +2,8 @@ const controls = {
   isRunning: true,
   gameSpeed: 300,
   boardSize: {
-    rows: 30,
-    columns: 30,
+    rows: 20,
+    columns: 20,
   }
 }
 

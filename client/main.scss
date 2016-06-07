@@ -36,6 +36,12 @@ $game-board-width: 750px;
     width: $game-board-width;
 }
 
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    width: $game-board-width;
+}
+
 .gameboard {
     height: $game-board-height;
     width: $game-board-width;
