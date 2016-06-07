@@ -1,5 +1,6 @@
-#Conway's Game of Life
-Peter Chau 
+# Conway's Game of Life
+Peter Chau  
+[gameoflife.labone.tech](http://gameoflife.labone.tech)
 
 ## Getting Start
 1. Clone this repo with ```git clone https://github.com/PeterChauYEG/gameoflife.git```
